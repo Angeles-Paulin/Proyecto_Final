@@ -1,0 +1,71 @@
+*{
+	margin: 0px; 
+	padding: 0px;
+	font-family: verdana;
+}
+.Completo{
+	height: 700px;
+	width: 100%;
+	background-color: blue;
+}
+.dentro{
+	height: 250px;
+	width: 90%;
+	background-color: rgba(88, 177, 159,1.0);
+	margin-left: 5%;
+	border-radius: 0px 0px 25px 25px;
+}
+.uno{
+	height: 300px;
+	width: 100%;
+	background-color: #00cec9;
+}
+.dos{
+	height: 500px;
+	width: 100%;
+	background-color: #00cec9;
+}
+.contenido{
+	height: 330px;
+	width: 190px;
+	border-radius: 25px;
+	margin-left: 50px;
+	margin-top: 30px;
+	background-color: rgba(0, 184, 148,.7);
+	position: relative;
+	float: left;
+	overflow: hidden;
+	transition: 2s all;
+	box-sizing: border-box;
+}
+	.contenido>img{
+		width: 130px;
+		margin-left: 30px;
+	}
+.boton{
+	height: 50px;
+	width: 100px;
+	border-radius: 25px;
+	background-color: rgba(162, 155, 254,.4);
+	margin-top: 75px;
+	margin-left: 45px;
+}
+h3{
+	font-family: arial;
+	text-align: center;
+	font-size: 30px;
+	color: rgba(129, 236, 236,1.0);
+	margin-top: 10px;
+}
+h1{
+	text-align: center;
+	font-size: 50px;
+	color: rgba(248, 239, 186,1.0);
+	margin-top: 10px;
+}
+h2{
+	text-align: center;
+	font-size: 30px;
+	color: rgba(255, 234, 167,1.0);
+	margin-top: 10px;
+}

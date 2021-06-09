@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
+    <script src="funciones.js" async="true"></script>
+    <title>CALCULADORA</title>
+</head>
+<body>
+    <div id="cont_calculadora" class="oscuro">
+        <div id="pantalla_Calculadora">
+            <div id="nocheDia">
+                <i class="fas fa-sun" id="bc" onclick="claro()"></i>
+                <i class="fas fa-moon activo" id="bo" onclick="oscuro()"></i>
+            </div>
+            <div id="pantalla_Operaciones" class="toscuro"></div>
+            <div id="pantalla_Resultado"></div>
+        </div>
+        <div class="cont_Botones">
+            <div class="fila fila1">
+                <div class="boton" id="btn_Borrar" onclick="borrar()">C</div>
+                <div class="boton btn_Vacio"></div>
+                <div class="boton btn_Vacio"></div>
+                <div class="boton btn_Operacion" onclick="agregar('/')">/</div>
+            </div>
+            <div class="fila">
+                <div class="boton toscuro" onclick="agregar(7)">7</div>
+                <div class="boton toscuro" onclick="agregar(8)">8</div>
+                <div class="boton toscuro" onclick="agregar(9)">9</div>
+                <div class="boton btn_Operacion" onclick="agregar('*')">x</div>
+            </div>
+            <div class="fila">
+                <div class="boton toscuro" onclick="agregar(4)">4</div>
+                <div class="boton toscuro" onclick="agregar(5)">5</div>
+                <div class="boton toscuro" onclick="agregar(6)">6</div>
+                <div class="boton btn_Operacion" onclick="agregar('-')">-</div>
+            </div>
+            <div class="fila">
+                <div class="boton toscuro" onclick="agregar(1)">1</div>
+                <div class="boton toscuro" onclick="agregar(2)">2</div>
+                <div class="boton toscuro" onclick="agregar(3)">3</div>
+                <div class="boton btn_Operacion" onclick="agregar('+')">+</div>
+            </div>
+            <div class="fila">
+                <div class="boton toscuro" onclick="agregar(0)">0</div>
+                <div class="boton btn_Vacio"></div>
+                <div class="boton toscuro" onclick="agregar('.')">.</div>
+                <div class="boton toscuro " id="btn_Igual" onclick="resultado()">=</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

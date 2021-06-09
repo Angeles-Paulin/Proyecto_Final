@@ -1,0 +1,154 @@
+*{
+	margin: 0px; 
+	padding: 0px;
+	font-family: verdana;
+}
+header{
+	width: 100%; /*ancho*/
+	height: 80px; /*alto*/
+	background: linear-gradient(#060609, #151823); /*color de fondo*/
+	position: relative; /*se comporta con respecto al navedador*/
+	float: left;
+}
+	#logo, nav, #usuario{
+		position: relative;
+		float: left;
+		height: 100%;
+	}
+	#logo{
+		width: 150px;
+		padding: 15px 25px;
+		box-sizing: border-box;
+		cursor: pointer;
+	}
+		#logo>img{
+			height: 100%;
+		}
+	nav{
+		width: calc(100% - 350px);
+	}
+		ul{
+			height: 100%;
+			list-style: none;
+		}
+		li{
+			position: relative;
+			float: left;
+			padding-left: 20px;
+			padding-right: 20px;
+			box-sizing: border-box;
+			height: 100%;
+			line-height: 80px; /*especificar el lugar del texto en lo vertical*/
+			color: white;
+			text-transform: uppercase; /*a mayúsculas*/
+			font-size: 14px;
+			cursor: pointer;
+		}
+		li>img{
+			height: 14px;
+			filter: invert(100%);
+			margin-right: 5px;
+		}
+	#usuario{
+		width: 200px;
+		padding: 10px 20px;
+		box-sizing: border-box;
+	}
+		p{
+			color:white;
+			font-size: 14px;
+			position: relative;
+			float: left;
+			line-height: 60px;
+			margin-right: 15px;
+		}
+		#usuario-img{
+			height: 100%;
+			width: 60px;
+			border-radius: 50%;
+			position: relative;
+			float: left;
+			background-color: yellow;
+			overflow: hidden;
+		}
+		#usuario-img>img{
+			height: 100%;
+		}
+section{
+	width: 100%; 
+	background-color: #151823; 
+	position: relative;
+	float: left;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 50px;
+	box-sizing: border-box; /*mantiene el tamaño original*/
+}
+	article,aside,#contenido{
+		width: 100%;
+		position: relative;
+		float: left;
+	}
+	article{
+		width: 80% !important; /*use este estilo*/
+		height: 350px;
+		border-radius: 30px;
+		overflow: hidden;
+		margin-left: 10%;
+		cursor: pointer;
+	}
+		article>img{
+			height: 100%;
+		}
+	aside{
+		height: 200px;
+		padding: 30px;
+		box-sizing: border-box;
+	}
+		.temas{
+			width: 210px;
+			height: 80%;
+			background: #272934;
+			position: relative;
+			float: left;
+			margin-left: 30px;
+			border-radius: 15px;
+			border: 4px solid #3C3D46;
+			box-sizing: border-box;
+			text-align: center;
+			cursor: pointer;
+		}
+		.temas>img{
+			/*width: 90%;*/
+			height: 100%;
+		}
+	#contenido{
+		background-color: rgba(0, 0, 0, .6);/*RGB=0 - 255 A=0 - 1*/
+		padding: 30px;
+		box-sizing: border-box;
+	}
+		.bloque{
+			height: 250px;
+			margin-bottom: 20x;
+		}
+			.bloque>h3{
+				color: #FFF;
+				font-size: 24px;
+			}
+			.peliculas{
+				position: relative;
+				float: left;
+				width: 18%;
+				height: 200px;
+				margin-top: 10px;
+				overflow: hidden;
+				border-radius: 15px;
+				margin-left: 20px;
+				cursor: pointer;
+			}
+			.primero{
+				margin-left: 0px !important;
+			}
+			.peliculas>img{
+				height: 100%;
+			}
